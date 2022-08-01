@@ -120,6 +120,10 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI \
     NexusLauncherRelease
 
+# Extra packages
+PRODUCT_PACKAGES += \
+    GameSpace \
+
 # SystemUI plugins
 PRODUCT_PACKAGES += \
     QuickAccessWallet
