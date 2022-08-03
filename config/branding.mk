@@ -2,7 +2,7 @@
 CUSTOM_BUILD_TYPE ?= UNOFFICIAL
 
 # EternityOS Props
-EternityOS_BASE_VERSION = 1.2
+EternityOS_BASE_VERSION = v1.2-Heaven
 Eternity_CODENAME := Heaven
 
 # Time Related
