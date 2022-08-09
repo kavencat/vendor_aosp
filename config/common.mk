@@ -127,6 +127,7 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 # Extra packages
 PRODUCT_PACKAGES += \
     GameSpace \
+    RepainterServicePriv
 
 # SystemUI plugins
 PRODUCT_PACKAGES += \
