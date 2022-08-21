@@ -103,6 +103,10 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/aosp/overlay/common
 
+# Themes
+PRODUCT_PACKAGES += \
+    AndroidBlackThemeOverlay
+
 # TouchGestures
 PRODUCT_PACKAGES += \
     TouchGestures
@@ -123,6 +127,7 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 # Extra packages
 PRODUCT_PACKAGES += \
     GameSpace \
+    RepainterServicePriv
 
 # SystemUI plugins
 PRODUCT_PACKAGES += \

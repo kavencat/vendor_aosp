@@ -2,8 +2,8 @@
 CUSTOM_BUILD_TYPE ?= UNOFFICIAL
 
 # EternityOS Props
-EternityOS_BASE_VERSION = v1.2-Heaven
-Eternity_CODENAME := Heaven
+EternityOS_BASE_VERSION = v1.4-DARKNESS
+Eternity_CODENAME := DARKNESS
 
 # Time Related
 CUSTOM_DATE_YEAR := $(shell date -u +%Y)
