@@ -29,5 +29,5 @@ ADDITIONAL_SYSTEM_PROPERTIES  += \
     org.eternityos.build_date_utc=$(CUSTOM_BUILD_DATE_UTC) \
     org.eternityos.build_type=$(CUSTOM_BUILD_TYPE) \
     org.eternityos.codename=$(EternityOS_BASE_VERSION) \
-    ro.eternityos.maintainer=$(ETERNITY_MAINTAINER)
+    ro.eternityos.maintainer=$(ETERNITY_MAINTAINER) \
     org.eternityos.build_security_patch=$(CUSTOM_SECURITY_PATCH)
