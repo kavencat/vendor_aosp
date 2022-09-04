@@ -24,7 +24,7 @@ CUSTOM_SECURITY_PATCH := 2022-08-05
 # Versioning props
 ADDITIONAL_SYSTEM_PROPERTIES  += \
     org.eternityos.version=$(EternityOS_BASE_VERSION) \
-    org.eternityos.version.display=$(CUSTOM_VERSION) \
+    org.eternityos.version.display=$(ETERNITY_VERSION) \
     org.eternityos.build_date=$(CUSTOM_BUILD_DATE) \
     org.eternityos.build_date_utc=$(CUSTOM_BUILD_DATE_UTC) \
     org.eternityos.build_type=$(CUSTOM_BUILD_TYPE) \
