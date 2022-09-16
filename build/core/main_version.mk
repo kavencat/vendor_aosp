@@ -18,9 +18,6 @@ ADDITIONAL_SYSTEM_PROPERTIES  += \
     persist.sys.recovery_update=true
 endif
 
-# Custom security patch
-CUSTOM_SECURITY_PATCH := 2022-08-05
-
 # Versioning props
 ADDITIONAL_SYSTEM_PROPERTIES  += \
     org.eternityos.version=$(EternityOS_BASE_VERSION) \
