@@ -56,6 +56,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/base/data/keyboards/Vendor_045e_Product_028e.kl:$(TARGET_COPY_OUT_PRODUCT)/usr/keylayout/Vendor_045e_Product_0719.kl
 
+# Enable Google LILY_EXPERIENCE feature
+PRODUCT_COPY_FILES += \
+    vendor/aosp/target/config/permissions/lily_experience.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/lily_experience.xml
+
 # Enforce privapp-permissions whitelist
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.control_privapp_permissions=enforce
@@ -118,6 +122,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # NavigationBarMode
 PRODUCT_PACKAGES += \
     NavigationBarMode2ButtonOverlay
+
+# Immersive Navigation Overlay
+PRODUCT_PACKAGES += \
+    ImmersiveNavigationOverlay
 
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
@@ -204,6 +212,10 @@ TARGET_SUPPORTS_CALL_RECORDING ?= true
 #    frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.biometrics.face.xml
 #endif
 
+# Repainter integration
+PRODUCT_PACKAGES += \
+    RepainterServicePriv
+
 # Audio
 $(call inherit-product, vendor/aosp/config/audio.mk)
 
@@ -214,7 +226,9 @@ $(call inherit-product, vendor/aosp/config/bootanimation.mk)
 $(call inherit-product, vendor/aosp/config/fonts.mk)
 
 # GApps
+ifeq ($(WITH_GAPPS),true)
 $(call inherit-product, vendor/gapps/config.mk)
+endif
 
 # OTA
 $(call inherit-product, vendor/aosp/config/ota.mk)

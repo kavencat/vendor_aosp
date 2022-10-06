@@ -3,6 +3,8 @@ PRODUCT_PACKAGES += \
     PixelLauncherCustomOverlay \
     PixelDocumentsUIGoogleOverlay \
     BuiltInPrintServiceOverlay \
+    GesturalNavigationOverlayLong \
+    GesturalNavigationOverlayMedium \
     GooglePermissionControllerOverlay \
     PixelConfigOverlayCommon \
     TeleServiceOverlay \
