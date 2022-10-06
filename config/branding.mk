@@ -14,8 +14,8 @@ ifeq ($(CUSTOM_BUILD_TYPE), OFFICIAL)
 endif
 
 # EternityOS Props
-EternityOS_BASE_VERSION = v2.0-Beta
-Eternity_CODENAME := Beta
+EternityOS_BASE_VERSION = v2.1-Origin
+Eternity_CODENAME := Origin
 
 # Time Related
 CUSTOM_DATE_YEAR := $(shell date -u +%Y)
