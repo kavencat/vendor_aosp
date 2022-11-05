@@ -226,9 +226,7 @@ $(call inherit-product, vendor/aosp/config/bootanimation.mk)
 $(call inherit-product, vendor/aosp/config/fonts.mk)
 
 # GApps
-ifeq ($(WITH_GAPPS),true)
 $(call inherit-product, vendor/gapps/config.mk)
-endif
 
 # OTA
 $(call inherit-product, vendor/aosp/config/ota.mk)
