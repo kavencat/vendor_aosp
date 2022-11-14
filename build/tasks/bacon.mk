@@ -20,6 +20,7 @@ SHA256 := prebuilts/build-tools/path/$(HOST_PREBUILT_TAG)/sha256sum
 
 .PHONY: bacon
 bacon: $(INTERNAL_OTA_PACKAGE_TARGET)
-	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(CUSTOM_TARGET_PACKAGE)
+	$(hide) mv $(INTERNAL_OTA_PACKAGE_TARGET) $(CUSTOM_TARGET_PACKAGE)
 	$(hide) $(SHA256) $(CUSTOM_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(CUSTOM_TARGET_PACKAGE).sha256sum
+	$(hide) source ./vendor/aosp/ota.sh $(CUSTOM_BUILD) $(PRODUCT_OUT) $(ETERNITY_VERSION).zip $(EternityOS_BASE_VERSION)
 	@echo "Package Complete: $(CUSTOM_TARGET_PACKAGE)" >&2
