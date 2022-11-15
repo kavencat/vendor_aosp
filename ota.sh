@@ -26,7 +26,7 @@ if [ -f $output ]; then
 	rm $output
 fi
 
-	filename=$(find "$3" | cut -d "/" -f9)
+	filename=$(find "$3" | cut -d "/" -f8)
 	BUILD_DATE=$(echo $filename | cut -d "-" -f6)
 	type=$(echo $filename | cut -d "-" -f8)
 	type=$(echo $type | cut -d "." -f1)
