@@ -21,12 +21,15 @@ output=$2/updates.json
 
 #/home/linuxlite/aosp/out/target/product/wayne/EternityOS-v2.2-Flexible-wayne-13.0-20221114-1722-UNOFFICIAL.zip.sha256sum
 
+echo $3
+
 #cleanup old file
 if [ -f $output ]; then
 	rm $output
 fi
 
-	filename=$(find "$3" | cut -d "/" -f8)
+	#filename=$(find "$3" | cut -d "/" -f7)
+	filename=$3
 	BUILD_DATE=$(echo $filename | cut -d "-" -f6)
 	type=$(echo $filename | cut -d "-" -f8)
 	type=$(echo $type | cut -d "." -f1)
@@ -37,9 +40,9 @@ fi
 	buildprop=$2/system/build.prop
 	linenr=`grep -n "ro.system.build.date.utc" $buildprop | cut -d':' -f1`
 	timestamp=`sed -n $linenr'p' < $buildprop | cut -d'=' -f2`
-	sha256=`sha256sum "$3" | cut -d' ' -f1`
-	id=`md5sum "$3" | cut -d' ' -f1`
-	size=`stat -c "%s" "$3"`
+	sha256=`sha256sum "$2/$3" | cut -d' ' -f1`
+	id=`md5sum "$2/$3" | cut -d' ' -f1`
+	size=`stat -c "%s" "$2/$3"`
 	BUILD_YEAR=${BUILD_DATE:0:4}
 	BUILD_MONTH=${BUILD_DATE:4:2}
 	BUILD_DAY=${BUILD_DATE:6:2}
