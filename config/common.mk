@@ -135,6 +135,7 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 # Extra packages
 PRODUCT_PACKAGES += \
     GameSpace \
+    Aperture \
     RepainterServicePriv
 
 # SystemUI plugins
