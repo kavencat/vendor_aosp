@@ -31,7 +31,7 @@ fi
 	#filename=$(find "$3" | cut -d "/" -f7)
 	filename=$3
 	BUILD_DATE=$(echo $filename | cut -d "-" -f6)
-	type=$(echo $filename | cut -d "-" -f8)
+	type=$(echo $filename | cut -d "-" -f7)
 	type=$(echo $type | cut -d "." -f1)
 	type=$(echo $type | tr "A-Z" "a-z")
 	version=$(echo $filename | cut -d "-" -f2)
