@@ -56,7 +56,12 @@ fi
     "romtype": "'$type'",
     "size": '$size',
     "url": "'$url'",
-    "version": "'$version'"
+    "version": "'$version'",
+    "filehash": "'$sha256'",
+    "donate_url": "http://cat.s1.natapp.cc",
+    "forum_url": "http://cat.s1.natapp.cc",
+    "website_url": "http://cat.s1.natapp.cc",
+    "news_url": "http://cat.s1.natapp.cc"
   }
  ]
 }
