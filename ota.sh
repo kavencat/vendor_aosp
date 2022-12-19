@@ -51,7 +51,6 @@ fi
     "datetime": '$timestamp',
     "filename": "'$filename'",
     "id": "'$id'",
-    "romtype": "'$type'",
     "size": '$size',
     "url": "'$url'",
     "version": "'$version'",
