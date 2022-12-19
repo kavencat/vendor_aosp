@@ -48,8 +48,6 @@ fi
 	BUILD_DAY=${BUILD_DATE:6:2}
 
 	echo '{
-  "response": [
-  {
     "datetime": '$timestamp',
     "filename": "'$filename'",
     "id": "'$id'",
@@ -62,8 +60,6 @@ fi
     "forum_url": "http://cat.s1.natapp.cc",
     "website_url": "http://cat.s1.natapp.cc",
     "news_url": "http://cat.s1.natapp.cc"
-  }
- ]
 }
 ' >> $output
 
